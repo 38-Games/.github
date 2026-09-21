@@ -75,6 +75,6 @@ New project information, development updates and releases will be shared through
 
   [Website](https://38games.net) · [Repositories](https://github.com/orgs/38-Games/repositories)
 
-  <sub>© 38Games. All rights reserved.</sub>
+  <sub>38Games</sub>
 </div>
 
