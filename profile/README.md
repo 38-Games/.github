@@ -48,8 +48,6 @@
 | **DarkDreams** | Atmospheric psychological horror game | In development |
 | **Capital Empire** | Mobile business and economy simulation | Alpha |
 | **Brain Busters** | Puzzle and knowledge game | Planned |
-| **PulsePad** | Upcoming digital experience | Planned |
-| **NutriQuest** | Upcoming application project | Planned |
 
 ## Technology
 
@@ -75,7 +73,7 @@ New project information, development updates and releases will be shared through
 
 <div align="center">
 
-  [Website](https://38games.de) · [Repositories](https://github.com/orgs/38-Games/repositories)
+  [Website](https://38games.net) · [Repositories](https://github.com/orgs/38-Games/repositories)
 
   <sub>© 38Games. All rights reserved.</sub>
 </div>
