@@ -1,0 +1,83 @@
+name: Bug report
+description: Report a reproducible problem in a 38Games project.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping us improve the project. Please provide enough detail for us to reproduce the problem.
+
+  - type: input
+    id: project
+    attributes:
+      label: Project
+      description: Which game or application is affected?
+      placeholder: DarkDreams
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Which version or build are you using?
+      placeholder: 0.1.0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Windows
+        - Android
+        - Web
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected instead.
+      placeholder: Describe the observed and expected behavior.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: List the smallest sequence of steps that triggers the problem.
+      placeholder: |
+        1. Start the game
+        2. Open ...
+        3. Select ...
+        4. The problem occurs
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots, video or logs
+      description: Drag relevant files into this field. Remove sensitive information first.
+
+  - type: textarea
+    id: system
+    attributes:
+      label: System information
+      description: Include relevant hardware, operating system, browser or device information.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Confirmation
+      options:
+        - label: I searched for an existing report of this problem.
+          required: true
+        - label: I removed passwords, keys and personal information from the report.
+          required: true
+

@@ -1,0 +1,27 @@
+name: Unity project check
+
+on:
+  push:
+    branches: [ $default-branch ]
+  pull_request:
+    branches: [ $default-branch ]
+
+permissions:
+  contents: read
+
+jobs:
+  validate-project:
+    name: Validate Unity project structure
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Verify required Unity files
+        shell: bash
+        run: |
+          test -d Assets
+          test -d Packages
+          test -f Packages/manifest.json
+          test -f ProjectSettings/ProjectVersion.txt
+

@@ -1,0 +1,43 @@
+name: Feature request
+description: Suggest an improvement or new idea for a 38Games project.
+title: "[Feature]: "
+body:
+  - type: input
+    id: project
+    attributes:
+      label: Project
+      description: Which game or application is this suggestion for?
+      placeholder: DarkDreams
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: Idea
+      description: Describe the feature you would like to see.
+    validations:
+      required: true
+
+  - type: textarea
+    id: value
+    attributes:
+      label: Why would this be useful?
+      description: Explain which problem it solves or how it improves the experience.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Describe any other solutions or approaches you considered.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Confirmation
+      options:
+        - label: I searched for an existing suggestion before creating this request.
+          required: true
+
